@@ -1,0 +1,49 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "author": "FF",
+      "quality": "5",
+      "packaging": "5",
+      "deliveryTime": "5",
+      "text": "goooood",
+      "created_at": "12/12/12"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "janjan",
+      "logo": "url",
+      "openingTime": 9,
+      "closingTime": 22,
+      "address": "1",
+      "categories": ["1"],
+      "foods": ["1"],
+      "comments": ["1"]
+    }
+  ],
+  "foods": [
+    {
+      "id":"1",
+      "name": "kebab",
+      "price": "10",
+      "description": "very deli",
+      "foodSet": ["1"]
+    }
+  ],
+  "cats": [
+    {
+      "id": "1",
+      "name": "goghti"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "1",
+      "city": "Tehran",
+      "area": "Vali",
+      "addressLine": "dabalala"
+    }
+  ]
+}
