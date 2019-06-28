@@ -183,7 +183,31 @@
     {
       "id": "1",
       "city": "Tehran",
-      "area": "Vali",
+      "area": "ولی عصر",
+      "addressLine": "dabalala"
+    },
+    {
+      "id": "2",
+      "city": "Tehran",
+      "area": "وحید",
+      "addressLine": "dabalala"
+    },
+    {
+      "id": "3",
+      "city": "Tehran",
+      "area": "توحید",
+      "addressLine": "dabalala"
+    },
+    {
+      "id": "4",
+      "city": "Tehran",
+      "area": "وزیر",
+      "addressLine": "dabalala"
+    },
+    {
+      "id": "4",
+      "city": "Tehran",
+      "area": "ولایت",
       "addressLine": "dabalala"
     }
   ]

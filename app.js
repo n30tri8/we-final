@@ -22,6 +22,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //user routes
+app.get('/api/areas', function(req, res, next) {
+    let qString = req.query;
+    let areas = [];
+    let t = db.get('addresses').value();
+    if('area' in qString){
+        t.forEach(function (address) {
+            if(address.area.startsWith(qString.area)){
+                areas.push(address.area);
+            }
+        })
+    }
+    res.json(areas);
+});
 app.get('/api/restaurants', function(req, res, next) {
   let qString = req.query;
   let qObject = {};
