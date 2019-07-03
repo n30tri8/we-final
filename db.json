@@ -67,7 +67,7 @@
   "restaurants": [
     {
       "id": "1",
-      "name": "janjan",
+      "name": "جان جان",
       "logo": "url",
       "openingTime": 9,
       "closingTime": 22,
@@ -85,11 +85,11 @@
         "2"
       ],
       "total_rating": 45,
-      "average_rating": 5
+      "averageRate": 5
     },
     {
       "id": "2",
-      "name": "2",
+      "name": "دو",
       "logo": "url",
       "openingTime": 9,
       "closingTime": 22,
@@ -106,11 +106,11 @@
         "2"
       ],
       "total_rating": 45,
-      "average_rating": 5
+      "averageRate": 5
     },
     {
       "id": "3",
-      "name": "3c",
+      "name": "سی سی",
       "logo": "url",
       "openingTime": 9,
       "closingTime": 22,
@@ -127,11 +127,11 @@
         "2"
       ],
       "total_rating": 45,
-      "average_rating": 5
+      "averageRate": 5
     },
     {
       "id": "9DT2Edx8k",
-      "name": "momtaz",
+      "name": "ممتاز",
       "logo": "default",
       "openingTime": 10,
       "closingTime": 21,
@@ -147,68 +147,68 @@
         "AqSBbZW3V"
       ],
       "total_rating": 20,
-      "average_rating": 2.2222222222222223
+      "averageRate": 2.2222222222222223
     }
   ],
   "foods": [
     {
       "id": "1",
-      "name": "kebab",
-      "price": "10",
-      "description": "very deli",
+      "name": "کباب",
+      "price": "20",
+      "description": "200 گرم گوشت",
       "foodSet": [
-        "1"
+        "4"
       ]
     }
   ],
   "cats": [
     {
       "id": "1",
-      "name": "gozhti"
+      "name": "غذای ایرانی"
     },
     {
       "id": "2",
-      "name": "khoshti"
+      "name": "خورشت"
     },
     {
       "id": "3",
-      "name": "salad"
+      "name": "سالاد"
     },
     {
       "id": "4",
-      "name": "kebab"
+      "name": "کبابی"
     }
   ],
   "addresses": [
     {
       "id": "1",
-      "city": "Tehran",
+      "city": "تهران",
       "area": "ولی عصر",
-      "addressLine": "dabalala"
+      "addressLine": "میدان ولی عصر، خیابان ولی عصر"
     },
     {
       "id": "2",
-      "city": "Tehran",
+      "city": "تهران",
       "area": "وحید",
-      "addressLine": "dabalala"
+      "addressLine": "وحید، وحید"
     },
     {
       "id": "3",
-      "city": "Tehran",
+      "city": "تهران",
       "area": "توحید",
-      "addressLine": "dabalala"
+      "addressLine": "توحید، توحید"
     },
     {
       "id": "4",
-      "city": "Tehran",
+      "city": "تهران",
       "area": "وزیر",
-      "addressLine": "dabalala"
+      "addressLine": "وزیر، وزیر"
     },
     {
       "id": "4",
-      "city": "Tehran",
+      "city": "تهران",
       "area": "ولایت",
-      "addressLine": "dabalala"
+      "addressLine": "ولایت، ولایت"
     }
   ]
 }

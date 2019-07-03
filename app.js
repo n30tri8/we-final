@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/api/areas', function(req, res, next) {
     let qString = req.query;
     let areas = [];
-    let t = db.get('addresses').value();
+    let t = db.get('addresses').filter({city: qString.city}).value();
     if('area' in qString){
         t.forEach(function (address) {
             if(address.area.startsWith(qString.area)){
@@ -112,7 +112,7 @@ app.post('/api/restaurants/:id/comments', function(req, res, next) {
         total_rating += quality + packaging + deliveryTime;
         db.get('restaurants').find({id: req.params.id}).set('total_rating', total_rating).write();
         let no_comments = db.get('restaurants').find({id: req.params.id}).get('comments').value().length;
-        db.get('restaurants').find({id: req.params.id}).set('average_rating', total_rating / (no_comments * 3)).write();
+        db.get('restaurants').find({id: req.params.id}).set('averageRate', total_rating / (no_comments * 3)).write();
         res.json(db.get('restaurants').find({id: req.params.id}).value());
     }
     else {
@@ -140,7 +140,7 @@ app.post('/api/restaurants', function(req, res, next) {
             foods : foods,
             comments : [],
             total_rating : 0,
-            average_rating: 0
+            averageRate: 0
         };
         db.get('restaurants').push(rest).write();
         res.json(db.get('restaurants').find({ id: rest_id }).value());
