@@ -17,7 +17,7 @@
                     {{item.name}}
                   </li>
                 </ul>
-                <address class="rest-info-address">{{info.address}}</address>
+                <address class="rest-info-address">{{info.address.addressLine}}</address>
               </div>
             </div>
           </div>

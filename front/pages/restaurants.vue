@@ -6,7 +6,7 @@
         <div id="current-place-div3">
           <h1>
             <span>{{translate_number(rests.length)}} رستوران امکان سرویس دهی به</span>
-            <span id="current-place-select-span">{{rests[0].address}}</span>
+            <span id="current-place-select-span">{{rests[0].address.city}}، {{rests[0].address.area}}، {{rests[0].address.addressLine}}</span>
             <span>را دارند</span>
           </h1>
         </div>
@@ -15,7 +15,7 @@
     <div id="search-place-div1">
       <div id="search-place-div2">
         <div id="search-place-div3">
-          <input id="search-place-input-txt" name="restaurant-name" placeholder="جست‌و‌‌جوی رستوران‌ در این محدوده" value="" v-model.trim="filter_city" />
+          <input id="search-place-input-txt" name="restaurant-name" placeholder="جست‌و‌‌جوی رستوران‌ در این محدوده" value="" v-model.trim="filtered_city"/>
           <div id="search-place-icon-div">
             <span id="search-place-icon-span">
               <svg viewBox="0 0 18 18" class="_32USF"><g fill="none" fill-rule="evenodd"><path d="M0 0h18v18H0z"></path><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(2 2)"><circle cx="6.125" cy="6.125" r="6.125"></circle><path d="M13.373 13.373l-2.767-2.767"></path></g><path d="M0 0h18v18H0z"></path></g></svg>
@@ -30,17 +30,22 @@
           <label id="branch-search-label" for="branchNameSearch">فیلتر بر اساس انواع غذا</label>
         </div>
         <div id="branch-search-div2">
-          <input placeholder="جست‌و‌‌جوی دسته‌بندی غذاها" id="branchNameSearch">
+          <input placeholder="جست‌و‌‌جوی دسته‌بندی غذاها" id="branchNameSearch" value="" v-model.trim="filter_cat">
         </div>
-        <!--TODO add filter side bar-->
+        <div id="selected-branch-div">
+          <CategorySelect v-for="item in selected_cats" v-bind:key="item.id" v-bind:category="item" v-bind:selected="1" v-on:toggle-box="toggleCategory"/>
+        </div>
+        <div id="all-branch-div">
+          <CategorySelect v-for="item in filtered_cats" v-bind:key="item.id" v-bind:category="item" v-bind:selected="0" v-on:toggle-box="toggleCategory"/>
+        </div>
       </div>
       <div id="rests-placeholder">
         <div class="rests-list">
-          <RestLink v-for="item in rests" v-bind:key="item.id" v-bind:info="item" v-bind:open="1" v-if="item.openingTime <= cu_time && item.closingTime >= cu_time"/>
+          <RestLink v-for="item in filtered_rests" v-bind:key="item.id" v-bind:info="item" v-bind:open="1" v-if="item.openingTime <= cu_time && item.closingTime >= cu_time"/>
         </div>
         <p id="closed-rests-p">رستوران های بسته</p>
         <div class="rests-list">
-          <RestLink v-for="item in rests" v-bind:key="item.id" v-bind:info="item" v-bind:open="0" v-if="item.openingTime > cu_time || item.closingTime < cu_time"/>
+          <RestLink v-for="item in filtered_rests" v-bind:key="item.id" v-bind:info="item" v-bind:open="0" v-if="item.openingTime > cu_time || item.closingTime < cu_time"/>
         </div>
       </div>
     </div>
@@ -50,20 +55,90 @@
 <script>
 import axios from 'axios'
 import util from '../assets/js/util'
+var _ = require('lodash/core');
 import RestLink from '../components/RestLink'
+import CategorySelect from '../components/CategorySelect'
 
 export default {
   components: {
-    RestLink
+    RestLink,
+    CategorySelect
   },
   name: 'Restaurants',
   data() {
     return {
-      rests: [1],
-      filtered_rests:[],
+      rests: [
+        {
+          "id": "dummy",
+          "name": "dummy",
+          "logo": "default.jpeg",
+          "openingTime": 9,
+          "closingTime": 22,
+          "address": "d",
+          "categories": [
+            "d",
+            "d"
+          ],
+          "foods": [
+            "d",
+            "d"
+          ],
+          "comments": [
+            "d",
+            "d",
+            "d"
+          ],
+          "total_rating": 45,
+          "averageRate": 5
+        }
+      ],
       filtered_city: '',
-      cu_time: 10
+      cu_time: 10,
+      filter_cat: '',
+      cats: [
+        {
+          "id": "d",
+          "name": "dummy"
+        }
+      ],
+      selected_cats: [
+        {
+          "id": "d",
+          "name": "dummy"
+        }
+      ]
     };
+  },
+  computed: {
+    filtered_rests: function () {
+      let upper = this.filtered_city;
+      let selected_ids = [];
+      this.selected_cats.forEach(function (item) {
+        selected_ids.push(item.id);
+      });
+      return this.rests.filter(function (rest) {
+        let c1 = rest.name.includes(upper);
+        if(!c1){
+          return false;
+        }
+        if(selected_ids.length === 0){
+          return true;
+        }
+        for (let i=0; i < rest.categories.length; i++){
+          if(selected_ids.includes(rest.categories[i].id)){
+            return true;
+          }
+        }
+        return false;
+      });
+
+    },
+    filtered_cats: function () {
+      let upper = this.filter_cat;
+      return this.cats.filter(function (category) {
+        return category.name.includes(upper);
+      })
+    }
   },
   async created() {
     const config = {
@@ -76,7 +151,24 @@ export default {
       //'restaurants?area=ولی عصر&category=غذای ایرانی'
       const res = await axios.get('http://localhost:3001/api' + this.$route.fullPath, config);
       this.rests = res.data;
-      this.filtered_rests = this.rests;
+      //collect of categories
+      this.cats = [];
+      this.selected_cats = [];
+      let upper = this.cats;
+      res.data.forEach(function (item) {
+        item.categories.forEach(function (category) {
+          let found = false;
+          for(let i = 0; i < upper.length; i++) {
+            if (upper[i].id === category.id) {
+              found = true;
+              break;
+            }
+          }
+          if(!found){
+            upper.push(_.clone(category));
+          }
+        });
+      });
     } catch (e) {
       console.log(e)
     }
@@ -84,6 +176,27 @@ export default {
   methods: {
     translate_number: function (eng_num) {
       return util.translate_number(eng_num);
+    },
+    toggleCategory : function (id) {
+      let tmp = this.cats.find(function( cat ) {
+        return cat.id === id;
+      });
+      if(tmp){
+        this.cats = this.cats.filter(function( cat ) {
+          return cat.id !== id;
+        });
+        this.selected_cats = this.selected_cats.concat(tmp);
+      }
+      else {
+        tmp = this.selected_cats.find(function( cat ) {
+          return cat.id === id;
+        });
+        this.selected_cats = this.selected_cats.filter(function( cat ) {
+          return cat.id !== id;
+        });
+        this.cats = this.cats.concat(tmp);
+      }
+
     }
   }
 }
@@ -298,5 +411,28 @@ export default {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     width: 100%;
+  }
+  #all-branch-div{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  #selected-branch-div{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border-bottom: #7f828b solid 2px;
   }
 </style>

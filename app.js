@@ -76,10 +76,8 @@ app.get('/api/restaurants', function(req, res, next) {
   }
     //joain values, joain
     //  join address
-    //  TODO i do not consider city on filtering
-    const address = 'تهران، ' + qAddressObject.area + '، ' + qAddressObject.addressLine;
     this_rests.forEach(function (item) {
-        item.address = address
+        item.address = qAddressObject
     });
     //join foods
     this_rests.forEach(function (item) {
@@ -96,6 +94,7 @@ app.get('/api/restaurants', function(req, res, next) {
             new_cats.push(db.get('cats').find({id: cat_id}).value());
         });
         item.categories = new_cats;
+    //    TODO join comments and food set in foods
     });
 
   res.json(this_rests);
