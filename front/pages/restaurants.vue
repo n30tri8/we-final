@@ -266,8 +266,6 @@ export default {
   }
   #search-place-div1{
     background-color: #fff;
-    width: 100%;
-    max-width: 120rem;
     padding: 0.5rem 3.5rem;
   }
   #search-place-div2{

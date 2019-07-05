@@ -1,7 +1,7 @@
 <template>
     <div class="outer-div">
       <div class="inner-div" v-bind:class="[open ? 'open-rest' : 'closed-rest']">
-        <nuxt-link :to="'rest-info/' + info.id" class="rest-page-link">
+        <nuxt-link :to="info.id" class="rest-page-link">
           <div class="rest-info">
             <div class="rest-info-img-div">
               <div class="rest-info-img-div2">
@@ -10,7 +10,7 @@
             </div>
             <div class="rest-info2">
               <h2 class="rest-info-name">{{info.name}}</h2>
-              <p class="rest-info-score">{{info.averageRate}}</p>
+              <p class="rest-info-score">{{Math.round(info.averageRate * 10) / 10}}</p>
               <div class="rest-info3">
                 <ul class="rest-info-foods">
                   <li class="rest-info-foods-item" v-for="item in info.categories">

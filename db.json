@@ -68,7 +68,7 @@
     {
       "id": "1",
       "name": "جان جان",
-      "logo": "default.jpeg",
+      "logo": "jan.jpeg",
       "openingTime": 9,
       "closingTime": 22,
       "address": "1",
@@ -88,7 +88,7 @@
       "total_rating": 45,
       "averageRate": 5
     },
-	{
+    {
       "id": "gg",
       "name": "باقالی",
       "logo": "ghgh.jpeg",
@@ -111,7 +111,7 @@
       "total_rating": 45,
       "averageRate": 5
     },
-	{
+    {
       "id": "gfg",
       "name": "هات پیتزا",
       "logo": "default.jpeg",
@@ -179,7 +179,7 @@
     {
       "id": "9DT2Edx8k",
       "name": "ممتاز",
-      "logo": "default.jpeg",
+      "logo": "3.jpeg",
       "openingTime": 10,
       "closingTime": 21,
       "address": "1",
@@ -196,6 +196,25 @@
       ],
       "total_rating": 20,
       "averageRate": 2.2222222222222223
+    },
+    {
+      "id": "KjRQnbgEM",
+      "name": "نااااااز",
+      "logo": "default.jpeg",
+      "openingTime": 10,
+      "closingTime": 21,
+      "address": "1",
+      "categories": [
+        "1",
+        "2"
+      ],
+      "foods": [
+        "gELuVZAaaJ",
+        "cYC_qgMqZd"
+      ],
+      "comments": [],
+      "total_rating": 0,
+      "averageRate": 0
     }
   ],
   "foods": [
@@ -216,6 +235,24 @@
       "foodSet": [
         "4"
       ]
+    },
+    {
+      "name": "کباب",
+      "price": "20",
+      "description": "500 گرم گوشت",
+      "foodSet": [
+        "4"
+      ],
+      "id": "gELuVZAaaJ"
+    },
+    {
+      "name": "کباب دو سیب",
+      "price": "40",
+      "description": "500 گرم گوشت",
+      "foodSet": [
+        "4"
+      ],
+      "id": "cYC_qgMqZd"
     }
   ],
   "cats": [

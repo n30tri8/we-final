@@ -79,25 +79,51 @@ app.get('/api/restaurants', function(req, res, next) {
     this_rests.forEach(function (item) {
         item.address = qAddressObject
     });
-    //join foods
     this_rests.forEach(function (item) {
+        //join foods
         let new_foods = [];
        item.foods.forEach(function (food_id) {
-           new_foods.push(db.get('foods').find({id: food_id}).value());
+           let new_food = _.clone(db.get('foods').find({id: food_id}).value());
+           let new_set = [];
+           new_food.foodSet.forEach(function (cat_id) {
+               new_set.push(db.get('cats').find({id: cat_id}).value());
+           });
+           new_food.foodSet = new_set;
+           new_foods.push(new_food);
        });
         item.foods = new_foods;
-    });
-    //join cats
-    this_rests.forEach(function (item) {
+        //join cats
         let new_cats = [];
         item.categories.forEach(function (cat_id) {
             new_cats.push(db.get('cats').find({id: cat_id}).value());
         });
         item.categories = new_cats;
-    //    TODO join comments and food set in foods
+        //join comments
+        let new_cmnts = [];
+        item.comments.forEach(function (cat_id) {
+            new_cmnts.push(db.get('comments').find({id: cat_id}).value());
+        });
+        item.comments = new_cmnts;
     });
+    // //join cats
+    // this_rests.forEach(function (item) {
+    //     let new_cats = [];
+    //     item.categories.forEach(function (cat_id) {
+    //         new_cats.push(db.get('cats').find({id: cat_id}).value());
+    //     });
+    //     item.categories = new_cats;
+    // });
+    // //join comments
+    // this_rests.forEach(function (item) {
+    //     let new_cmnts = [];
+    //     item.comments.forEach(function (cat_id) {
+    //         new_cmnts.push(db.get('comments').find({id: cat_id}).value());
+    //     });
+    //     item.comments = new_cmnts;
+    //
+    // });
 
-  res.json(this_rests);
+    res.json(this_rests);
 });
 app.get('/api/restaurants/:id', function(req, res, next) {
   let rest = db.get('restaurants').find({ id: req.params.id }).value();
@@ -152,9 +178,23 @@ app.post('/api/restaurants', function(req, res, next) {
     if(req.body.name && req.body.address && req.body.categories){
         let rest_id = shid.generate().toString();
         let foods;
-        //TODO add new foods
         if(req.body.foods){
-            foods = req.body.foods.split(', ');
+            let raw_foods;
+            try {
+                raw_foods = JSON.parse(req.body.foods);
+            }
+            catch (e) {
+                raw_foods = [];
+                console.error(e);
+            }
+            let food_ids = [];
+            raw_foods.forEach(function (f) {
+                let f_id = shid.generate();
+                food_ids.push(f_id);
+                f['id'] = f_id;
+                db.get('foods').push(f).write();
+            });
+            foods = food_ids;
         }
         else {
             foods = [];
