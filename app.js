@@ -81,6 +81,23 @@ app.get('/api/restaurants', function(req, res, next) {
     this_rests.forEach(function (item) {
         item.address = address
     });
+    //join foods
+    this_rests.forEach(function (item) {
+        let new_foods = [];
+       item.foods.forEach(function (food_id) {
+           new_foods.push(db.get('foods').find({id: food_id}).value());
+       });
+        item.foods = new_foods;
+    });
+    //join cats
+    this_rests.forEach(function (item) {
+        let new_cats = [];
+        item.categories.forEach(function (cat_id) {
+            new_cats.push(db.get('cats').find({id: cat_id}).value());
+        });
+        item.categories = new_cats;
+    });
+
   res.json(this_rests);
 });
 app.get('/api/restaurants/:id', function(req, res, next) {
@@ -146,7 +163,7 @@ app.post('/api/restaurants', function(req, res, next) {
         let rest = {
             id : rest_id,
             name : req.body.name,
-            logo: req.body.logo || 'default',
+            logo: req.body.logo || 'default.jpeg',
             openingTime: parseInt(req.body.openingTime) || 9,
             closingTime: parseInt(req.body.closingTime) || 21,
             address: req.body.address,

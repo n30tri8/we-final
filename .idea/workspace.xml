@@ -1,8 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="97a628d5-e83f-4b13-a1bd-a12f4d81893a" name="Default Changelist" comment="first successful test">
-      <change afterPath="$PROJECT_DIR$/routes/restaurants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/best-boys.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/bonus-app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/bonus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/cats.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/delicous.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/download-app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/enamad2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/gb-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/good-boys.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/how-to.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/img/restaurant-search-banner-2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/accessible-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/accusoft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/acquisitions-incorporated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/adn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/adversal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/airbnb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/apple-pay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/asymmetrik.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/battle-net.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/behance.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/bimobject.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/btc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/buffer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/canadian-maple-leaf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/cc-amex.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/cc-paypal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/centercode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/cloudscale.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/connectdevelop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/contao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/creative-commons-share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/cuttlefish.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/d-and-d.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/deviantart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/dhl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/digg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/digital-ocean.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/drupal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/ebay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/elementor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/ember.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/fedex.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/figma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/firefox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/first-order-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/flickr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/font-awesome-flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/fort-awesome-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/fort-awesome.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/forumbee.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/fulcrum.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/gg-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/gitkraken.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/google-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/gratipay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/grunt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/gulp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/hacker-news-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/hackerrank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/imdb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/invision.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/js-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/kaggle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/laravel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/linkedin-in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/magento.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/medrt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/megaport.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/napster.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/neos.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/node.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/nutritionix.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/old-republic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/opencart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/page4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/phoenix-framework.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/pied-piper-pp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/qq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/raspberry-pi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/reacteurope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/renren.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/replyd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/salesforce.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/shirtsinbulk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/simplybuilt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/sistrix.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/skyatlas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/slack-hash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/snapchat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/squarespace.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/stack-overflow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/steam-symbol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/sticker-mule.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/stumbleupon-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/stumbleupon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/tripadvisor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/twitch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/uber.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/uikit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/untappd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/ups.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/usps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/viadeo-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/vuejs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/waze.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/wolf-pack-battalion.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/wpressr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/xing-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/yahoo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/yandex-international.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/yandex.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/youtube-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/assets/style/fontawesome-free-5.8.1-web/svgs/brands/zhihu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
@@ -18,15 +140,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="49" selection-end-column="39" />
-              <folding>
-                <element signature="e#714#743#0" />
-                <element signature="e#802#1048#0" />
-              </folding>
+            <state relative-caret-position="392">
+              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -34,8 +152,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="21" />
+            <state relative-caret-position="341">
+              <caret line="188" column="10" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front/pages/restaurants.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#template#0;n#!!top" />
+                <element signature="e#1856#1881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/components/RestLink.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -45,16 +187,64 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Pug File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.find</find>
+      <find>data-reactid=&quot;\d*&quot;</find>
+      <find>rel=&quot;.*&quot;</find>
+      <find>_2dvjl</find>
+      <find>_2tRUd</find>
+      <find>average_rating</find>
+      <find>navbar</find>
+      <find>login-reg-link</find>
+      <find>log-reg-vert-line</find>
+      <find>log-reg-li</find>
+      <find>class=</find>
+      <find>../fonts</find>
+      <find>#footer</find>
+      <find>../img</find>
+      <find>../img/</find>
+      <find>view</find>
+      <find>ولی عصر</find>
+      <find>translate_number</find>
+      <find>data-reactid=&quot;\d*&quot;</find>
+      <find>inner-div</find>
+      <find>font</find>
+      <find>shab</find>
+      <find>hover</find>
+      <find>default</find>
+      <find>def</find>
+      <find>xxx</find>
+      <find>url</find>
+      <find>rest-info-img</find>
+      <find>default.png</find>
+      <find>rests-list</find>
+      <find>branchNameSearch</find>
     </findStrings>
+    <replaceStrings>
+      <replace>تهران</replace>
+      <replace>header-li</replace>
+      <replace>averageRate</replace>
+      <replace>../assets/style/fonts</replace>
+      <replace>../assets/img/</replace>
+      <replace>default</replace>
+      <replace>default.png</replace>
+      <replace>default.jpeg</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="p-torabi-var &lt;pooyatorabi@aut.ac.ir&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -64,8 +254,21 @@
         <option value="$PROJECT_DIR$/db/db.json" />
         <option value="$PROJECT_DIR$/db/db.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/db.json" />
+        <option value="$PROJECT_DIR$/views/header.pug" />
+        <option value="$PROJECT_DIR$/views/head.pug" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/header.css" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/front/components/AppHeader.vue" />
+        <option value="$PROJECT_DIR$/front/components/AppFooter.vue" />
+        <option value="$PROJECT_DIR$/front/.eslintrc.js" />
+        <option value="$PROJECT_DIR$/front/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/front/layouts/default.vue" />
+        <option value="$PROJECT_DIR$/front/assets/js/util.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/db.json" />
+        <option value="$PROJECT_DIR$/front/components/RestLink.vue" />
+        <option value="$PROJECT_DIR$/front/pages/restaurants.vue" />
       </list>
     </option>
   </component>
@@ -81,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,21 +295,56 @@
             <path>
               <item name="we-final" type="b2602c69:ProjectViewProjectNode" />
               <item name="we-final" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-final" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-final" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-final" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-final" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="E:\workspace\webstorm\we-final\front\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="E:\workspace\webstorm\we-final\front\node_modules\eslint" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -135,7 +374,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561632238743</updated>
       <workItem from="1561632243815" duration="509000" />
-      <workItem from="1561648489591" duration="12310000" />
+      <workItem from="1561648489591" duration="15122000" />
+      <workItem from="1561707410902" duration="12007000" />
+      <workItem from="1561742298203" duration="1508000" />
+      <workItem from="1561757267618" duration="41000" />
+      <workItem from="1561795267892" duration="6595000" />
+      <workItem from="1562185513784" duration="53883000" />
     </task>
     <task id="LOCAL-00001" summary="first successful test">
       <created>1561665825048</created>
@@ -151,32 +395,83 @@
       <option name="project" value="LOCAL" />
       <updated>1561666025757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented all GET routes">
+      <created>1561674267253</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561674267253</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented post routers">
+      <created>1561708232165</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561708232165</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final test for backend-obligatory parts">
+      <created>1561723818841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561723818841</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented bonus parts">
+      <created>1561738778583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561738778583</updated>
+    </task>
+    <task id="LOCAL-00007" summary="initialized front end with nuxt.js">
+      <created>1562185875557</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562185875557</updated>
+    </task>
+    <task id="LOCAL-00008" summary="lots of new things in rest list vue page">
+      <created>1562284858594</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562284858594</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12819000" />
+    <option name="totallyTimeSpent" value="89665000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -188,16 +483,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first successful test" />
     <MESSAGE value="commit issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit issues" />
+    <MESSAGE value="implemented all GET routes" />
+    <MESSAGE value="implemented post routers" />
+    <MESSAGE value="final test for backend-obligatory parts" />
+    <MESSAGE value="implemented bonus parts" />
+    <MESSAGE value="initialized front end with nuxt.js" />
+    <MESSAGE value="lots of new things in rest list vue page" />
+    <option name="LAST_COMMIT_MESSAGE" value="lots of new things in rest list vue page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1053">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -205,30 +499,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/db.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/restaurants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/db.js" />
+    <entry file="file://$PROJECT_DIR$/routes/restaurants.js" />
+    <entry file="file://$PROJECT_DIR$/routes/index.js" />
+    <entry file="file://$PROJECT_DIR$/routes/users.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -236,20 +510,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.json">
+    <entry file="file://$PROJECT_DIR$/views/error.pug" />
+    <entry file="file://$PROJECT_DIR$/views/layout.pug" />
+    <entry file="file://$PROJECT_DIR$/views/index.pug" />
+    <entry file="file://$PROJECT_DIR$/views/head.pug" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/header.css" />
+    <entry file="file://$PROJECT_DIR$/views/header.pug" />
+    <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../reyhoon/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/components/AppFooter.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4449">
+          <caret line="326" column="41" selection-start-line="326" selection-start-column="41" selection-end-line="326" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#0;n#g#0;n#svg#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#path#1;n#g#0;n#svg#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../reyhoon/html/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../reyhoon/js/dynamic-main-loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/assets/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="75" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/components/AppHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="392">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="188" column="10" selection-start-line="188" selection-start-column="10" selection-end-line="188" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/components/RestLink.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/pages/restaurants.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
           <folding>
-            <element signature="e#714#743#0" />
-            <element signature="e#802#1048#0" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="e#1856#1881#0" expanded="true" />
           </folding>
         </state>
       </provider>
