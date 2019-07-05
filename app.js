@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var shid = require('shortid');
 const low = require('lowdb');
+var _ = require('lodash/core');
 const FileSync = require('./node_modules/lowdb/adapters/FileSync');
 
 const adapter = new FileSync('./db.json');
@@ -12,15 +13,18 @@ const db = low(adapter);
 
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+});
 //user routes
 app.get('/api/areas', function(req, res, next) {
     let qString = req.query;
@@ -29,7 +33,7 @@ app.get('/api/areas', function(req, res, next) {
     if('area' in qString){
         t.forEach(function (address) {
             if(address.area.startsWith(qString.area)){
-                areas.push(address.area);
+                areas.push({'area':address.area, 'city':address.city, 'addressLine':address.addressLine});
             }
         })
     }
@@ -37,13 +41,15 @@ app.get('/api/areas', function(req, res, next) {
 });
 app.get('/api/restaurants', function(req, res, next) {
   let qString = req.query;
-  let qObject = {};
-  if('area' in qString){
-    let t = db.get('addresses').find({area: qString.area}).value();
-    if(t){
-      qObject['address'] = t.id;
+    let qObject = {};
+    let qAddressObject;
+    if('area' in qString){
+        //  TODO i do not consider city on filtering
+        qAddressObject = db.get('addresses').find({area: qString.area, city: 'تهران'}).value();
+        if(qAddressObject){
+          qObject['address'] = qAddressObject.id;
+        }
     }
-  }
   let rests = db.get('restaurants').filter(qObject).value();
   let this_rests = [];
   if('category' in qString){
@@ -61,13 +67,20 @@ app.get('/api/restaurants', function(req, res, next) {
     this_rests = [];
     rests.forEach(function (item) {
       if(item.categories.filter(value => this_cats.includes(value)).length > 0){
-        this_rests.push(item);
+        this_rests.push(_.clone(item));
       }
     });
   }
   else{
-    this_rests = rests;
+    this_rests = _.clone(rests);
   }
+    //joain values, joain
+    //  join address
+    //  TODO i do not consider city on filtering
+    const address = 'تهران، ' + qAddressObject.area + '، ' + qAddressObject.addressLine;
+    this_rests.forEach(function (item) {
+        item.address = address
+    });
   res.json(this_rests);
 });
 app.get('/api/restaurants/:id', function(req, res, next) {
@@ -123,6 +136,7 @@ app.post('/api/restaurants', function(req, res, next) {
     if(req.body.name && req.body.address && req.body.categories){
         let rest_id = shid.generate().toString();
         let foods;
+        //TODO add new foods
         if(req.body.foods){
             foods = req.body.foods.split(', ');
         }
@@ -160,9 +174,8 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.send('error');
 });
 
 module.exports = app;
