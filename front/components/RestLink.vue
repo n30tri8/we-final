@@ -1,59 +1,52 @@
 <template>
     <div class="outer-div">
-      <div class="inner-div">
-        <a href="xxx" class="rest-page-link">
+      <div class="inner-div" v-bind:class="[open ? 'open-rest' : 'closed-rest']">
+        <nuxt-link :to="'rest-info/' + info.id" class="rest-page-link">
           <div class="rest-info">
             <div class="rest-info-img-div">
               <div class="rest-info-img-div2">
-                <img class="rest-info-img" src="xxx">
+                <img class="rest-info-img" :src="`rest-logo/${info.logo}`" alt="restaurant logo">
               </div>
             </div>
             <div class="rest-info2">
-              <h2 class="rest-info-name">xxx</h2>
-              <p class="rest-info-score">xxx</p>
+              <h2 class="rest-info-name">{{info.name}}</h2>
+              <p class="rest-info-score">{{info.averageRate}}</p>
               <div class="rest-info3">
                 <ul class="rest-info-foods">
-                  <li class="rest-info-foods-item">xxx</li>
+                  <li class="rest-info-foods-item" v-for="item in info.categories">
+                    {{item.name}}
+                  </li>
                 </ul>
-                <address title="xxx" class="rest-info-address">xxx</address>
+                <address class="rest-info-address">{{info.address}}</address>
               </div>
             </div>
           </div>
-          <div class="order-btn">
+          <div class="order-btn" v-show="open">
             <div class="order-btn2">
               <button class="order-btn3">شروع سفارش</button>
             </div>
           </div>
-        </a>
+        </nuxt-link>
       </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "RestLink"
+        name: "RestLink",
+      props: ['info', 'open']
     }
 </script>
 
 <style scoped>
-  @media (min-width: 1281px){
-    .outer-div{
-      -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
-      margin: 0 0 2.6rem 2%;
-    }
-  }
-  @media (min-width: 1025px) {
-    .outer-div{
-      -ms-flex-preferred-size: 48.5%;
-      flex-basis: 48.5%;
-    }
+  .outer-div{
+    margin: 0 0 2.6rem 2%;
+    width: 30%;
   }
   .inner-div{
     border-radius: .4rem;
     -webkit-box-shadow: 0 0 0.4rem rgba(0,0,0,.12);
     box-shadow: 0 0 0.4rem rgba(0,0,0,.12);
-    background-color: #fff;
     border: 1.6px solid transparent;
     border: .1rem solid transparent;
     cursor: pointer;
@@ -61,12 +54,20 @@
     height: 100%;
     position: relative;
   }
+  .open-rest{
+    background-color: #fff;
+  }
+  .closed-rest{
+    background-color: rgba(0,0,0,.04);
+  }
   .inner-div:hover{
     -webkit-transition: -webkit-box-shadow .3s;
     transition: -webkit-box-shadow .3s;
     -o-transition: box-shadow .3s;
     transition: box-shadow .3s;
     transition: box-shadow .3s,-webkit-box-shadow .3s;
+    -webkit-box-shadow: 0 0.3rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 0.3rem 2rem rgba(0,0,0,.2);
   }
   .rest-page-link{
     text-decoration: none;
@@ -147,6 +148,7 @@
     padding: 8px 0;
     text-align: center;
     margin: 0;
+    font-family: Shabnam;
   }
   .order-btn3:hover{
     background-color: rgba(212,0,98,.05)!important;
@@ -162,8 +164,7 @@
     -ms-flex-align: start;
     align-items: flex-start;
     width: 100%;
-    padding: 24px 38.4px 9.6px;
-    padding: 1.5rem 2.4rem .6rem;
+    padding: 3%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
@@ -172,10 +173,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-left: 32px;
-    margin-left: 2rem;
-    width: 91.2px;
-    width: 5.7rem;
+    margin-left: 1rem;
+    width: 30%;
+    height: 6rem;
   }
   .rest-info-img-div2{
     -webkit-box-shadow: none;
@@ -184,14 +184,16 @@
     border: .1rem solid #cbcbcb;
     margin: 0;
     border-radius: .4rem;
-    width: 8rem;
-    height: 8rem;
+    width: 100%;
+    height: 100%;
   }
   .rest-info-img{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
+    visibility: visible;
     color: transparent;
+    object-fit: cover;
   }
   .rest-info2{
     display: -webkit-box;
@@ -207,16 +209,15 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    width: 100%;
+    width: 65%;
     height: 100%;
   }
   .rest-info-name{
-    font-size: 35.2px;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: #191919;
     font-weight: 700;
-    margin-bottom: 9.6px;
-    margin-bottom: .6rem;
+    margin-bottom: .4rem;
+    margin-top: 1rem;
     text-align: right;
     line-height: 1.4;
   }
@@ -236,8 +237,7 @@
     color: #777;
     overflow: hidden;
     position: relative;
-    width: 272px;
-    width: 17rem;
+    width: 100%;
     margin-bottom: 0;
     font-size: 16px;
     font-size: 1rem;
@@ -270,11 +270,13 @@
     justify-content: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin: 0;
+    padding-right: 0;
   }
   .rest-info-foods-item{
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #4a4a4a;
     line-height: 1.5;
     margin-bottom: 8px;

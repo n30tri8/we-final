@@ -35,26 +35,34 @@
         <!--TODO add filter side bar-->
       </div>
       <div id="rests-placeholder">
-        <div class="rests-list"></div>
+        <div class="rests-list">
+          <RestLink v-for="item in rests" v-bind:key="item.id" v-bind:info="item" v-bind:open="1" v-if="item.openingTime <= cu_time && item.closingTime >= cu_time"/>
+        </div>
         <p id="closed-rests-p">رستوران های بسته</p>
-        <div class="rests-list"></div>
+        <div class="rests-list">
+          <RestLink v-for="item in rests" v-bind:key="item.id" v-bind:info="item" v-bind:open="0" v-if="item.openingTime > cu_time || item.closingTime < cu_time"/>
+        </div>
       </div>
     </div>
-    <p>this is a page</p>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import util from '../assets/js/util'
+import RestLink from '../components/RestLink'
 
 export default {
+  components: {
+    RestLink
+  },
   name: 'Restaurants',
   data() {
     return {
       rests: [1],
       filtered_rests:[],
-      filtered_city: ''
+      filtered_city: '',
+      cu_time: 10
     };
   },
   async created() {
@@ -254,8 +262,7 @@ export default {
     width: 92%;
     height: 54.4px;
     height: 3.4rem;
-    margin: 16px auto;
-    margin: 1rem auto;
+    margin: 1rem 5px;
   }
   #branchNameSearch{
     height: 100%;
@@ -266,6 +273,7 @@ export default {
     cursor: text;
     background-color: #fafafa;
     font-family: Shabnam;
+    padding: 0px 5px;
   }
   #rests-placeholder{
     width: calc(100% - 27rem);
